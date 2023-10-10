@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AB4IR Academy</title>
+
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!---start header---->
+	<header>
+		<a href="#" class="logo">
+			<img src="img/logo.png">
+		</a>
+
+		<ul class="navbar">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#categories">Resource Library</a></li>
+			<li><a href="#courses">Courses</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+
+		<div class="header-icons">
+		     <button class="button" data-modal="modalOne" >Login</button>
+			 <button class="button" data-modal="modalTwo" color="black">Sign up</button>
+			<!--<a href="#"><i class='bx bx-user'></i></a>-->
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+
+		<div id="modalOne" class="modal">
+      <div class="modal-content">
+        <div class="contact-form">
+          <a class="close">&times;</a>
+          <form action="/">
+            <h3>Login</h3>
+            <div>
+              <input class="fname" type="text" name="name" placeholder="Username" />
+              <input type="text" name="name" placeholder="Password" />
+            </div>
+            <button type="submit" href="/">Submit</button>
+			<br>
+			<br>
+			<a href="#"><span>Forgot password?</span></a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="modalTwo" class="modal">
+      <div class="modal-content">
+        <div class="contact-form">
+          <span class="close">&times;</span>
+          <form action="/">
+		   <h3>Sign up</h3>
+            <div>
+              <input class="fname" type="text" name="name" placeholder="Name" />
+			  <input type="text" name="name" placeholder="Surname" />
+              <input type="text" name="name" placeholder="Username" />
+			  <input type="text" name="name" placeholder="Email" />
+              <input type="text" name="name" placeholder="Password" />
+              <input type="text" name="name" placeholder="Comfirm password" />
+            </div>
+            <button type="submit" href="/">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+	</header>
+
+	<!---start home section---->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h1>AB4IR learning academy</h1>
+			<!--<h1>Accessible Online Courses For All</h1>-->
+			<p>Changing lives one community at a time</p>
+			<div class="latter">
+				<form>
+					<input type="text" placeholder="What do you want to learn?" required>
+					<input type="submit" value="Search" required>
+				</form>
+			</div>
+		</div>
+
+		<div class="home-img">
+			<img src="img/home.png">
+		</div>
+	</section>
+
+	<!---start about section---->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="img/about.png">
+		</div>
+
+		<div class="about-text">
+			<h2>Join the best institution for learning and mentoring</h2>
+			<p>We empower disadvantaged communities through Digital Creative Innovations and Business Incubation.</p>
+			<a href="#" class="btn">Read More</a>
+		</div>
+	</section>
+
+<!---start categories section---->
+<section class="categories" id="categories">
+	<div class="center-text">
+		<h5>Resource library</h5>
+		<h2>Featured resources</h2>
+	</div>
+
+	<div class="categories-content">
+		<div class="box">
+			<h3>Resource heading 1</h3>
+			<p>All the information, liks, sides and references are going to be placed here</p>
+			<h5>Place d'
+				ate here</h5>
+		</div>
+
+		<div class="box">
+			<h3>Resource heading 2</h3>
+			<p>All the information, liks, sides and references are going to be placed here</p>
+			<h5>Place date here</h5>
+		</div>
+
+		<div class="box">
+			<h3>Resource heading 3</h3>
+			<p>All the information, liks, sides and references are going to be placed here</p>
+			<h5>Place date here</h5>
+		</div>
+
+		<div class="box">
+			<h3>Resource heading 4</h3>
+			<p>All the information, liks, sides and references are going to be placed here</p>
+			<h5>Place date here</h5>
+		</div>
+
+		<div class="box">
+			<h3>Resource heading 5</h3>
+			<p>All the information, liks, sides and references are going to be placed here</p>
+			<h5>Place date here</h5>
+		</div>
+
+		<div class="box">
+			<h3>Resource heading 6</h3>
+			<p>All the information, liks, sides and references are going to be placed here</p>
+			<h5>Place date here</h5>
+		</div>
+
+	</div>
+</section>
+
+	<!---start course section---->
+	<section class="courses" id="courses">
+		<div class="center-text">
+			<h5>COURSES</h5>
+			<h2>Explore Popular Courses</h2>
+		</div>
+
+		<div class="courses-content">
+			<div class="row">
+				<img src="img/tech.png">
+				<div class="courses-text">
+					<h3>Kasi Tech Program</h3>
+					<div class="rating">
+						<div class="star">
+							<button class="btn" onclick="openForm('animation')">Read more</button>
+					<button class="btn" onclick="openForm('registration')">Register</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/seed.png">
+				<div class="courses-text">
+					<h3>Seed</h3>
+					<div class="rating">
+						<div class="star">
+							<button class="btn" onclick="openForm('gaming')">Read more</button>
+					<button class="btn" onclick="openForm('registration')">Register</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/nurture.png">
+				<div class="courses-text">
+					<h3>Nurture\Stage</h3>
+					<div class="rating">
+						<div class="star">
+							<button class="btn" onclick="openForm('businessincubation')">Read more</button>
+					<button class="btn" onclick="openForm('registration')">Register</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/fruition.png">
+				<div class="courses-text">
+					<h3>Fruition</h3>
+					<div class="rating">
+						<div class="star">
+							<button class="btn" onclick="openForm('codingandprogramming')">Read more</button>
+					<button class="btn" onclick="openForm('registration')">Register</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/animation.png">
+				<div class="courses-text">
+					<h3>Animation</h3>
+					<div class="rating">
+						<div class="star">
+							<button class="btn" onclick="openForm('umbocoder')">Read more</button>
+					<button class="btn" onclick="openForm('registration')">Register</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/gaming.png">
+				<div class="courses-text">
+					<h3>Gaming</h3>
+					<div class="rating">
+						<div class="star">
+							<button class="btn" onclick="openForm('droneeconomy')">Read more</button>
+					<button class="btn" onclick="openForm('registration')">Register</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/drone.png">
+				<div class="courses-text">
+					<h3>Drone Technology</h3>
+					<div class="rating">
+						<div class="star">
+							<button class="btn" onclick="openForm('droneeconomy')">Read more</button>
+					<button class="btn" onclick="openForm('registration')">Register</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/robot.png">
+				<div class="courses-text">
+					<h3>robotics</h3>
+					<div class="rating">
+						<div class="star">
+							<button class="btn" onclick="openForm('droneeconomy')">Read more</button>
+					<button class="btn" onclick="openForm('registration')">Register</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!---start cta section---->
+	<section class="cta">
+		<div class="center-text">
+			<h5>In partner with</h5>
+			<h2>Leading Universities And Companies</h2>
+		</div>
+
+		<div class="cta-content">
+			<div class="cta-img">
+				<img src="img/cta6.png">
+			</div>
+
+			<div class="cta-img">
+				<img src="img/cta1.jfif">
+			</div>
+
+			<div class="cta-img">
+				<img src="img/cta3.jpg">
+			</div>
+
+			<div class="cta-img">
+				<img src="img/cta5.png">
+			</div>
+
+			<div class="cta-img">
+				<img src="img/cta2.png">
+			</div>
+
+
+		</div>
+	</section>
+
+
+	<!---start contact section---->
+	<section class="contact" id="contact">
+		<div class="main-contact">
+			<div class="contact-content">
+				<li><a href="https://www.facebook.com/ab4ir"><img src="img/facebook.png"></a></li>
+				<li><a href="https://www.instagram.com/ab4ir_sa/?hl=en"><img src="img/instagram.png"></a></li>
+				<li><a href="https://twitter.com/ab4_ir?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="img/twitter.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UCCNf4Blkl6KTMAueiKn7kig"><img src="img/youtube.png"></a></li>
+				<li><a href="https://www.linkedin.com/company/ab4ir/?originalSubdomain=za"><img src="img/linkedin.png"></a></li>
+			</div>
+
+			<div class="contact-content">
+				<li><a href="#home">Home</a></li>
+			  <li><a href="#categories">Categories</a></li>
+			  <li><a href="#courses">Courses</a></li>
+			  <li><a href="#about">About Us</a></li>
+			  <li><a href="#contact">Contact</a></li>
+			</div>
+
+			<div class="contact-content">
+				<li><a href="#">Profile</a></li>
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Register</a></li>
+				<li><a href="#">Instructor</a></li>
+				<li><a href="#">Dashboard</a></li>
+			</div>
+
+			<div class="contact-content">
+				<li><a href="#">Tshwane South College (ODI Campus) Workshop F Mabopane Unit M Pretoria Gauteng 0190</a></li>
+				<li><a href="#">Admin@ab4ir.org</a></li>
+				<li><a href="#">+27(0) 12 023 1761</a></li>
+			</div>
+
+		</div>
+	</section>
+
+	<div class="last-text">
+		<p>© AB4IR. All rights reserved.</p>
+
+	</div>
+
+
+	<!---custom js link---->
+	<script type="text/javascript" src="js/script.js">
+
+	</script>
+
+</body>
+</html>
